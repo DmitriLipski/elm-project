@@ -10,6 +10,7 @@ import Html.Events exposing (..)
 -- MAIN
 
 
+main : Program () Model Msg
 main =
     Browser.sandbox { init = init, update = update, view = view }
 
@@ -85,7 +86,7 @@ viewModal model toMsg =
     in
     div [ style "display" prop, class "modal" ]
         [ div [ class "modal-content" ]
-            [ span [ class "close", onClick toMsg ] [ text "&times;" ]
+            [ span [ class "close", onClick toMsg ] [ text "×" ]
             , p [] [ text "Some text in the Modal" ]
             ]
         ]
