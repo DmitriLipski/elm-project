@@ -5,12 +5,12 @@ All of the Elm code lives in `src/Main.elm` and relies on the [elm/html][html] l
 [html]: https://package.elm-lang.org/packages/elm/html/latest
 
 
-## Build Instructions
+## Run Instructions
 
 Run the following command from the root of this project:
 
 ```bash
-elm make src/Main.elm --output=public/elm.js
+elm-live src/Main.elm --open -- --output=public/script.js
 ```
 
-Then open `index.html` in your browser!
+Then open `localhost:8000` in your browser!

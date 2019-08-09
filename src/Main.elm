@@ -64,7 +64,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ button [ onClick Open ] [ text "Open" ]
+        [ button [ class "trigger", onClick Open ] [ text "Open" ]
         , viewModal model Close
         ]
 
